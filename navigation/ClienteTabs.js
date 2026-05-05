@@ -1,5 +1,6 @@
 import { createBottomTabNavigator } from '@react-navigation/bottom-tabs';
-import { Text } from 'react-native';
+import { Text, View, Button } from 'react-native';
+import firebase from '../configs/firebase';
 
 const Tab = createBottomTabNavigator();
 
@@ -11,8 +12,21 @@ function Carrinho() {
   return <Text>Carrinho</Text>;
 }
 
-function Perfil() {
-  return <Text>Perfil</Text>;
+function Perfil({navigation}) {
+  function sair() {
+    firebase.auth()
+      .signOut()
+      .then(() => {
+        navigation.replace("Login");
+      });
+  }
+
+  return (
+    <View>
+      <Text>Perfil</Text>
+      <Button title="Sair" onPress={sair} />
+    </View>
+  );
 }
 
 export default function ClienteTabs() {
