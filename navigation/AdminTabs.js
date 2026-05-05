@@ -1,10 +1,22 @@
 import { createBottomTabNavigator } from '@react-navigation/bottom-tabs';
-import { Text } from 'react-native';
+import { Text, View, Button } from 'react-native';
+import firebase from '../configs/firebase';s
 
 const Tab = createBottomTabNavigator();
 
-function Inicio() {
-  return <Text>Inicio</Text>;
+function Inicio({navigation}) {
+  function sair() {
+    firebase.auth().signOut()
+      .then(() => {
+        navigation.replace("Login");
+      });
+  }
+
+  return (
+    <View>
+      <Button title="Sair" onPress={sair} />
+    </View>
+  );
 }
 
 function Estoque() {
