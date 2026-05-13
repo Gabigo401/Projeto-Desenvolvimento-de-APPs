@@ -3,6 +3,7 @@ import { Text, View, Button, StyleSheet } from 'react-native';
 import firebase from '../configs/firebase';
 import TelaLoja from '../Telas/TelaLoja';
 import TelaCarrinho from '../Telas/TelaCarrinho';
+import TelaHistorico from '../Telas/TelaHistorico';
 import { Ionicons } from '@expo/vector-icons';
 
 const Tab = createBottomTabNavigator();
