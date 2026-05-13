@@ -31,7 +31,9 @@ export default function TelaLoja() {
       .ref('carrinhos/' + uid)
       .push({
         modelo: item.modelo,
-        preco: item.preco
+       cor: item.cor,
+       tamanho: item.tamanho,
+       preco: item.preco
       });
     firebase.database()
       .ref('roupas/' + id)
