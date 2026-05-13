@@ -55,7 +55,7 @@ Ao finalizar a compra:
 - os produtos são removidos do carrinho
 - o estoque é atualizado automaticamente
 - o aplicativo utiliza vibração para fornecer feedback ao usuário
-- 
+  
 ### Perfil
 A tela Perfil permite realizar logout da conta autenticada.
 
@@ -114,6 +114,29 @@ Foi utilizada vibração do celular para fornecer feedback ao usuário durante a
 O aplicativo utiliza a logo da loja nas telas de Login e Cadastro.
 
 # Demonstração
+
+## Tela de Login
+
+<img width="382" height="698" alt="image" src="https://github.com/user-attachments/assets/6ba6f2d4-0735-4951-9e26-8c379b18f7a2" />
+
+---
+
+## Tela da Loja
+
+<img width="376" height="517" alt="image" src="https://github.com/user-attachments/assets/e35f862b-e007-4f97-a6c7-d0bb784af11b" />
+
+---
+
+## Tela do Carrinho
+
+<img width="377" height="779" alt="image" src="https://github.com/user-attachments/assets/245c5885-9f8a-4cc5-8074-4f4b52372bf8" />
+
+---
+
+## Tela do Estoque
+
+<img width="378" height="781" alt="image" src="https://github.com/user-attachments/assets/bfe5af17-19d6-4df4-9dab-d49a1422b18c" />
+
 
 ## Telas do aplicativo
 * Login
