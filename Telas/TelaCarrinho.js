@@ -22,8 +22,24 @@ export default function TelaCarrinho() {
     const uid = firebase.auth().currentUser.uid;
     firebase.database()
       .ref('carrinhos/' + uid)
-      .remove();
-    alert("Compra finalizada!");
+      .once('value')
+    .then(snapshot => {
+      const itens = snapshot.val();
+      if (!itens) {
+        alert("Carrinho vazio");
+        return;
+      }
+      firebase.database()
+        .ref('historico/' + uid)
+        .push({
+          data: new Date().toLocaleString(),
+          itens: itens
+        });
+      firebase.database()
+        .ref('carrinhos/' + uid)
+        .remove();
+      alert("Compra finalizada!");
+    });
   }
 
   return (
