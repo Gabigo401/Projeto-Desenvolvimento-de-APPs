@@ -48,6 +48,9 @@ export default function ClienteTabs() {
             Carrinho: focused
               ? 'cart'
               : 'cart-outline',
+            Historico: focused
+              ? 'receipt'
+              : 'receipt-outline',
             Perfil: focused
               ? 'person'
               : 'person-outline',
@@ -65,6 +68,7 @@ export default function ClienteTabs() {
       })}>
      <Tab.Screen name="Loja" component={TelaLoja}/>
      <Tab.Screen name="Carrinho" component={TelaCarrinho}/>
+     <Tab.Screen name="Historico" component={TelaHistorico}/>
      <Tab.Screen name="Perfil" component={Perfil}/>
     </Tab.Navigator>
   );
