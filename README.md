@@ -137,6 +137,8 @@ O aplicativo utiliza a logo da loja nas telas de Login e Cadastro.
 
 <img width="378" height="781" alt="image" src="https://github.com/user-attachments/assets/bfe5af17-19d6-4df4-9dab-d49a1422b18c" />
 
+https://youtu.be/QQ7yxkAA95w
+Video mostrando o app
 
 ## Telas do aplicativo
 * Login
